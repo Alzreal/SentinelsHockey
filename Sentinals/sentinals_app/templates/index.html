@@ -55,7 +55,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home <i class="bi bi-house"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item">
@@ -65,13 +65,13 @@
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
 </header>
 
-<main>
+<main style="background-color: rgb(210, 210, 221);">
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -81,12 +81,12 @@
         </div>
         <div class="carousel-inner" style="height: 550px;">
             <div class="carousel-item active">
-                <img src="{% static 'img/Pic4.jpg' %}" width="100%" height="550px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>>
+                <img src="{% static 'img/BannerPic4.jpg' %}" width="100%" height="550px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>>
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1 style="text-shadow: 2px 2px 2px black;">Baltimore Sentinels vs Baltimore Banners</h1>
                         <p style="text-shadow: 2px 2px 2px black;">See some of the pictures from our fund raising game on Feb 27th 2022 in Baltimore.</p>
-                        <p><a class="btn btn-lg btn-primary" href="https://www.polishmafiaphotography.com/ClientGalleries/Banners-Sentinels-Hockey-2/">Click here</a></p>
+                        <p><a class="btn btn-lg btn-success" href="https://www.polishmafiaphotography.com/ClientGalleries/Banners-Sentinels-Hockey-2/">Click here</a></p>
                     </div>
                 </div>
             </div>
@@ -101,13 +101,13 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="550px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="{% static 'img/scrubs6.jpg' %}" width="100%" height="550px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
     
                 <div class="container">
                     <div class="carousel-caption text-end">
-                        <h1>One more for good measure, as a place holder.</h1>
-                        <p>Not sure whats gonna go here yet.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Button</a></p>
+                        <h1 style="text-shadow: 2px 2px 2px black;">Baltimore Sentinels join with Shock Trauma Scrubs</h1>
+                        <p style="text-shadow: 2px 2px 2px black;">The Sentinels and the Scrubs join together in the Mayrland Hero Hockey League</p>
+                        <p><a class="btn btn-lg btn-success" href="https://www.themhhl.com/">Vist the MHHL site</a></p>
                     </div>
                 </div>
             </div>
@@ -132,25 +132,22 @@
 <!-- Three columns of text below the carousel -->
         <div class="row" style="padding-top: 20px;">
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+                <img src="{% static 'img/logo2.png' %}" alt="Sentinels Logo" style="height: 140px; width: 140px;">
                 <h2>Current Roster</h2>
                 <p>See the Baltimore Sentinels current roster of players.</p>
-                <p><a class="btn btn-secondary" href="/roster">View Roster &raquo;</a></p>
+                <p><a class="btn btn-warning" href="/roster">View Roster &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
+                <img src="{% static 'img/calendar.png' %}" alt="Pic of a calendar" style="width: 140px; height: 140px;">
                 <h2>Schedule</h2>
                 <p>The Baltimore Sentinels upcoming events.</p>
-                <p><a class="btn btn-secondary" href="#">View Events &raquo;</a></p>
+                <p><a class="btn btn-warning" href="/schedule">View Events &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-                <h2>Our Mission</h2>
+                <img src="{%static 'img/hockey2.png' %}" alt="Pic of a hockey player" style="height: 140px; width: 140px;">
+                <h2>Our Mission <span class="text-muted">(Coming soon)</span></h2>
                 <p>View our mission statement and what we are all about.</p>
-                <p><a class="btn btn-secondary" href="#">View Statement &raquo;</a></p>
+                <p><a class="btn btn-warning" href="#">View Statement &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -161,11 +158,18 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">Placeholder.</span></h2>
-                <p class="lead">Some placeholder content for the first featurette here.</p>
+                <h2 class="featurette-heading">Baltimore Sentinels in the news.
+                <p class="lead">Some of the times that the Sentinels have been in the news.</p>
+                <a href="https://www.nhl.com/news/color-of-hockey-charity-youth-hockey-in-baltimore/c-316387364" class="link-dark">NHL.com Color of Hockey</a>
+                <br>
+                <br>
+                <a href="https://baltimore.cbslocal.com/2022/02/21/baltimore-hockey-team-honors-fallen-friends-firefighters-and-officer-keona-holley/" class="link-dark">CBS Baltimore article</a>
+                <br>
+                <br>
+                <a href="https://www.gofundme.com/f/sentinels-vs-banners-memorial-game" class="link-dark">Gofundme from the last Baltimore Sentinels vs Baltimore Banners game</a>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img src="{% static 'img/news.png' %}" alt="Picture of a news icon" style="height: 500px; width: 500px;">
             </div>
         </div>
 
@@ -173,11 +177,13 @@
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Second featurette heading. <span class="text-muted">Placeholder.</span></h2>
-                <p class="lead">More placeholder content here.</p>
+                <h2 class="featurette-heading">Shop the Sentinels Fan store! <span class="text-muted">(Coming soon)</span></h2>
+                <p class="lead">Want a Balitmore Sentinels hoodie or t-shirt? Head on over to our team store for all you fan gear needs! (coming soon)</p>
+                <br>
+                <p><a class="btn btn-success" href="#">Team Store &raquo;</a></p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img src="{% static 'img/retail.png' %}" alt="Pic of a store front" style="height: 500px; width: 500px;">
             </div>
         </div>
 
@@ -196,7 +202,7 @@
                 </svg></a>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img src="{% static 'img/FollowUs.png' %}" style="height: 500px; width: 500px;">
             </div>
         </div>
 
@@ -209,7 +215,7 @@
 
 <!-- FOOTER -->
     <footer class="container">
-    <p class="float-end"><a class="btn btn-success btn-sm" href="/" role="button">Back to top <i class="bi bi-house"></i></a>
+    <p class="float-end"><a class="btn btn-success btn-sm" href="/" role="button">Back to top <i class="bi bi-box-arrow-up"></i></a>
     <p>&copy; C. Farell Web Productions &middot; Site created ultilizing Bootstrap v5.1 <i class="bi bi-bootstrap"></i> </p>
     </footer>
 

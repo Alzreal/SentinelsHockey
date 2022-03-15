@@ -5,3 +5,6 @@ def index(request):
 
 def roster(request):
     return render(request, 'roster.html')
+
+def schedule(request):
+    return render(request, 'schedule.html')
